@@ -50,6 +50,6 @@ function init() {
 	//Test alert
 	//alert("This is working.");
 	setCookie("darkmode","true");
-	alert(getCookie("darkmode");
+	alert(getCookie("darkmode"));
 	
 };
