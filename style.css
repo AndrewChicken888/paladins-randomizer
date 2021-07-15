@@ -1,0 +1,46 @@
+#cookies {
+	z-index: 999 !important;
+	position:fixed;
+	bottom:0;
+	background-color:red;
+	width:100%;
+	left:0%;
+	padding-left:10px;
+	text-align:center;
+}
+#close {
+	width:15px;
+	height:15px;
+	padding:0px;
+	font-size:10px;
+	position:absolute;
+	border:1px solid black;
+	top:0%;
+	right:10px;
+}
+
+button {
+    padding-left:5px;
+    padding-right:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+
+    -webkit-appearance:button;
+
+    border: double 2px #ff0000;
+
+    background-color:#c90000;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+
+    width:108px;
+    height:35px;
+	font-style:bold;
+	font-size:18px;
+}
+button:hover {
+	background-color:#ff8800;
+	color:#910000;
+	cursor:pointer;
+}
