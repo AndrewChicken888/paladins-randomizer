@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <head>
-	<title>Paladins Randomizer alpha 0.0.1</title>
+	<title>Paladins Randomizer</title>
 	<script type="text/javascript" src="code.js"></script>
 	<link rel="stylesheet" href="style.css"/>
 	<link rel="https://static.wikia.nocookie.net/paladins_gamepedia/images/4/4a/Champion_Androxus_Icon.png"/>
 </head>
 <body onload="init()">
-	<div id="header"><h1 id="headerText">Paladins Randomizer alpha 0.0.2</h1>
+	<div id="header"><h1 id="headerText">Paladins Randomizer alpha 0.0.2</h1></div>
 	<div id="main">
 		<h2>Welcome to the Paladins Randomizer!</h2>
 		<p>This program will randomize everything about Paladins. Choose to randomize your champion, items, loadouts, or even your whole team!</p>
 		<br>
-		<button id="randomize" onclick="randomize()" type="button">Randomize!</button>
-		<div id="champ_container">
-			<h3 id="champ_name">Champion: None</h3>
-			<input id="champToggle" type="checkbox" name="champToggle" value="champToggle" checked><label for="champToggle">Toggle Champion Randomizer</label>
-			<img id="champ_image" src="DefaultChamp.png"/>
-		</div>
-		<div id="item_container">
-			<h3 id="items_name">Items:</h3>
-			<input id="itemToggle" type="checkbox" name="itemToggle" value="itemToggle"><label for="itemToggle">Toggle Item Randomizer</label>
-			<img id="item1img" src="https://static.wikia.nocookie.net/paladins_gamepedia/images/6/64/Card_Cauterize.png"/>
-			<p id="item1name">Item 1</p>
-			<img id="item2img" src="https://static.wikia.nocookie.net/paladins_gamepedia/images/6/64/Card_Cauterize.png"/>
-			<p id="item2name">Item 2</p>
-			<img id="item3img" src="https://static.wikia.nocookie.net/paladins_gamepedia/images/6/64/Card_Cauterize.png"/>
-			<p id="item3name">Item 3</p>
-			<img id="item4img" src="https://static.wikia.nocookie.net/paladins_gamepedia/images/6/64/Card_Cauterize.png"/>
-			<p id="item4name">Item 4</p>
-		</div>
-		<div id="loadout_container">
-			<h3 id="cards_name">Cards:</h3>
-			<!--<input id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle"><label for="cardsToggle">Toggle Cards Randomizer</label>-->
-			<p>Coming soon!</p>
+		<div id="main_container">
+			<div id="champ_container">
+				<input class="toggle" id="champToggle" type="checkbox" name="champToggle" value="champToggle" checked>
+				<img id="champ_image" src="DefaultChamp.png"/>
+			</div>
+			<div id="item_container">
+				<input class="toggle" id="itemToggle" type="checkbox" name="itemToggle" value="itemToggle" checked>
+				<img class="item" id="item1img" src="DefaultItem.png"/>
+				<img class="item" id="item2img" src="DefaultItem.png"/>
+				<img class="item" id="item3img" src="DefaultItem.png"/>
+				<img class="item" id="item4img" src="DefaultItem.png"/>
+			</div>
+			<br>
+			<div id="column">
+				<div id="talent_container"></div>
+				<button id="randomize" onclick="randomize()" type="button">Randomize!</button>				
+			</div>
+			<div id="loadout_container">
+				<input class="toggle" id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle" checked>
+				<img id="cards_img" src="CardDeck.png"/>
+				<!--<img class="card" id="card_1" src="CardSelect.png"/>-->
+			</div>
 		</div>
 	</div>
 	<div id="footer">

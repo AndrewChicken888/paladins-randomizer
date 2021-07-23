@@ -58,7 +58,6 @@ function randomize() {
 		
 		//Randomize the champion
 		rand = Math.floor(Math.random()*champions.length);
-		document.getElementById("champ_name").innerHTML = "Champion: " + champions[rand];
 		document.getElementById("champ_image").src = champions[rand] + ".png";
 	}
 	
@@ -68,7 +67,6 @@ function randomize() {
 		//Item 1
 		rand = Math.floor(Math.random()*items.length);
 		randPH[0] = rand;
-		document.getElementById("item1name").innerHTML = items[rand];
 		document.getElementById("item1img").src = items[rand] + ".png";
 		
 		//Item 2
@@ -77,7 +75,6 @@ function randomize() {
 			rand = Math.floor(Math.random()*items.length);
 		}
 		randPH[1] = rand;
-		document.getElementById("item2name").innerHTML = items[rand];
 		document.getElementById("item2img").src = items[rand] + ".png";
 		
 		//Item 3
@@ -86,7 +83,6 @@ function randomize() {
 			rand = Math.floor(Math.random()*items.length);
 		}
 		randPH[2] = rand;
-		document.getElementById("item3name").innerHTML = items[rand];
 		document.getElementById("item3img").src = items[rand] + ".png";
 		
 		//Item 4
@@ -94,7 +90,6 @@ function randomize() {
 			//This while loop is required to ensure that the random item generated is not the same as the other items before it.
 			rand = Math.floor(Math.random()*items.length);
 		}
-		document.getElementById("item4name").innerHTML = items[rand];
 		document.getElementById("item4img").src = items[rand] + ".png";
 		
 		//Clear the random placeholder array for the next use.
