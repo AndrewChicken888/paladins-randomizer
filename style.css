@@ -34,10 +34,10 @@ button {
 	padding-bottom:5px;
 
     -webkit-appearance:button;
+	
+	border: 0px;
 
-    border: double 2px #ff0000;
-
-    background-color:#c90000;
+    background-color:#18445e;
     color:#FFF;
     white-space: nowrap;
     overflow:hidden;
@@ -45,11 +45,11 @@ button {
     width:108px;
     height:35px;
 	font-style:bold;
-	font-size:18px;
+	font-size:24px;
 }
 button:hover {
-	background-color:#ff8800;
-	color:#910000;
+	background-color:#18445e;
+	color:#309bd9;
 	cursor:pointer;
 }
 label {
