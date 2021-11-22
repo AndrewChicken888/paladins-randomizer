@@ -6,7 +6,7 @@
 	<link rel="https://static.wikia.nocookie.net/paladins_gamepedia/images/4/4a/Champion_Androxus_Icon.png"/>
 </head>
 <body onload="init()">
-	<div id="header"><h1 id="headerText">Paladins Randomizer Alpha 0.0.4</h1></div>
+	<div id="header"><h1 id="headerText">Paladins Randomizer 1.0.0</h1></div>
 	<div id="main">
 		<h2>Welcome to the Paladins Randomizer!</h2>
 		<p>This program will randomize everything about Paladins. Choose to randomize your champion, items, loadouts, or even your whole team!</p>
@@ -25,13 +25,20 @@
 			</div>
 			<br>
 			<div id="column">
-				<div id="talent_container"></div>
+				<div id="talent_container">
+				<input class="toggle" id="talentToggle" type="checkbox" name="talentToggle" value="talentToggle" checked>
+				<p id="talent">Talent</p>
+				</div>
 				<button id="randomize" onclick="randomize()" type="button">Randomize!</button>				
 			</div>
 			<div id="loadout_container">
 				<input class="toggle" id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle" checked>
 				<img id="cards_img" src="CardDeck.png"/>
-				<!--<img class="card" id="card_1" src="CardSelect.png"/>-->
+				<img class="card" id="card_0" src="CardSelect.png"/>
+				<img class="card" id="card_1" src="CardSelect.png"/>
+				<img class="card" id="card_2" src="CardSelect.png"/>
+				<img class="card" id="card_3" src="CardSelect.png"/>
+				<img class="card" id="card_4" src="CardSelect.png"/>
 			</div>
 		</div>
 	</div>
