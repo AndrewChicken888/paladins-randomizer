@@ -105,7 +105,7 @@ function randomize() {
 				talent = "Talent";
 		}				
 		document.getElementById("talent").innerHTML = talent;
-	} else {
+	} else if (!document.getElementById("talentToggle").checked && !document.getElementById("champToggle").checked){
 		document.getElementById("talent").innerHTML = "Talent";
 	}
 	
