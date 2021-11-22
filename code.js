@@ -19,6 +19,7 @@ var champ;
 var talent;
 
 var rand;
+var champID;
 var randPH = [null, null, null]
 
 //Create arrays holding the card values and locations.
@@ -84,6 +85,7 @@ function randomize() {
 		
 		//Randomize the champion
 		rand = Math.floor(Math.random()*champions.length);
+		champID = rand;
 		champ = champions[rand];
 		document.getElementById("champ_image").src = champ + ".png";
 	}
@@ -93,19 +95,19 @@ function randomize() {
 		var rand2 = Math.floor(Math.random()*3);
 		switch (rand2) {
 			case 0:
-				talent = talent1[rand];
+				talent = talent1[champID];
 				break;
 			case 1:
-				talent = talent2[rand];
+				talent = talent2[champID];
 				break;
 			case 2:
-				talent = talent3[rand];
+				talent = talent3[champID];
 				break;
 			default:
 				talent = "Talent";
-		}				
+		}
 		document.getElementById("talent").innerHTML = talent;
-	} else if (!document.getElementById("talentToggle").checked && !document.getElementById("champToggle").checked){
+	} else if (!document.getElementById("talentToggle").checked && document.getElementById("champToggle").checked) {
 		document.getElementById("talent").innerHTML = "Talent";
 	}
 	
