@@ -12,6 +12,7 @@
 body {
 	background-color:#121212;
 	color:white;
+	font-family: 'Arial";
 }
 
 a {
@@ -41,11 +42,13 @@ button {
     color:#FFF;
     white-space: nowrap;
     overflow:hidden;
+	
 
     width:108px;
     height:35px;
 	font-style:bold;
 	font-size:24px;
+	font-family: 'Arial";
 }
 button:hover {
 	background-color:#18445e;
@@ -90,12 +93,14 @@ label {
 	text-align: center;
 	width: 100%;
 	left: 0;
+	font-family: 'Arial";
 }
 
 #main {
 	position: absolute;
 	text-align: center;
 	top: 100px;
+	font-family: 'Arial";
 }
 
 #footer {
@@ -109,6 +114,7 @@ label {
 	text-align: center;
 	width: 100%;
 	left: 0%;
+	font-family: 'Arial";
 }
 
 #main_container {
@@ -117,6 +123,7 @@ label {
 	border: 5px solid white;
 	width: 65%;
 	margin: auto;
+	font-family: 'Arial";
 }
 
 #column {
@@ -127,6 +134,7 @@ label {
 #randomize {
 	width: 100%;
 	height: 50%;
+	font-family: 'Arial";
 }
 
 #talent_container {
@@ -136,6 +144,7 @@ label {
 	display: flex;	
 	font-style:bold;
 	font-size:24px;
+	font-family: 'Arial";
 }
 
 #talent {
@@ -143,6 +152,7 @@ label {
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
+	font-family: 'Arial";
 }
 
 #champ_container {
