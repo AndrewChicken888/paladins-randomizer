@@ -346,7 +346,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Grover":
-				while (items[rand] == "Guardian") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
