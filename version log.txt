@@ -1,0 +1,25 @@
+Paladins Randomizer Version Log
+
+0.0.1 - 7/22/2021:
+Constructed the foundation of the application. Set up the system to randomize the champion and imported graphics for each of the champions. Imported scripts from my previous program eat.r to detect whether the user is on a mobile device and allow the user to press enter to randomize.
+
+0.0.2 - 7/22/2021:
+Constructed the item randomizer. Imported graphics for each of the items. Updated to dark mode.
+
+0.0.3 - 7/23/2021:
+Complete graphical overhaul of the program. Flexible graphics for widescreen monitors have been implemented. Vertical monitors have yet to be adapted for. More graphics have been imported for future use.
+
+0.0.4 - 8/20/2021:
+Saati has been added to the champion pool. The item randomizer has been fixed so that it will no longer provide items which the selected champion cannot buy. For example, Yagorath will never get Nimble, Master Riding, or Deft Hands.
+
+0.0.5 - 11/21/2021:
+Azaan has been added to the champion pool. The loadout randomizer has been implemented. It will select from one of 10 preset card value combinations, shuffle the card values, then assign a random position to each card in the deck of 16 cards. The graphics have been implemented. Better math should be implemented in the future to accurately adjust their position on the screen.
+
+1.0.0 - 11/22/2021:
+Talents have been randomized. Further work on optimization can be done and more updates can be done when new champions are added, but otherwise all goals have been achieved.
+
+1.0.1 - 3/10/2022:
+VII and Betty la Bomba have been added. Items have been updated to include Provision and block Provision from being purchased on ineligible champions.
+
+1.0.2 - 6/21/2022:
+Lillith has been added.
