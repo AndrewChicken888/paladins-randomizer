@@ -6,15 +6,15 @@ function isMobileDevice() {
 };
 
 //Arrays containing the data for each section
-var champions = ["Androxus", "Ash", "Atlas", "Azaan", "Barik", "Betty la Bomba", "Bomb King", "Buck", "Cassie", "Corvus", "Dredge", "Drogoz", "Evie", "Fernando", "Furia", "Grohk", "Grover", "Imani", "Inara", "Io", "Jenos", "Khan", "Kinessa", "Koga", "Lex", "Lian", "Lillith", "Maeve", "Makoa", "Mal'Damba", "Moji", "Octavia", "Pip", "Raum", "Rei", "Ruckus", "Saati", "Seris", "Sha Lin", "Skye", "Strix", "Talus", "Terminus", "Tiberius", "Torvald", "Tyra", "Vatu", "VII", "Viktor", "Vivian", "Vora", "Willo", "Yagorath", "Ying", "Zhin"];
+var champions = ["Androxus", "Ash", "Atlas", "Azaan", "Barik", "Betty la Bomba", "Bomb King", "Buck", "Cassie", "Caspian", "Corvus", "Dredge", "Drogoz", "Evie", "Fernando", "Furia", "Grohk", "Grover", "Imani", "Inara", "Io", "Jenos", "Kasumi", "Khan", "Kinessa", "Koga", "Lex", "Lian", "Lillith", "Maeve", "Makoa", "Mal'Damba", "Moji", "Octavia", "Pip", "Raum", "Rei", "Ruckus", "Saati", "Seris", "Sha Lin", "Skye", "Strix", "Talus", "Terminus", "Tiberius", "Torvald", "Tyra", "Vatu", "VII", "Viktor", "Vivian", "Vora", "Willo", "Yagorath", "Ying", "Zhin"];
 
-var talent1 = ["Cursed Revolver", "Battering Ram", "Unstable Fissure", "Persistence", "Forgefire", "Fiery Disposition", "Chain Reaction", "Ensnare", "Impulse", "Spreading Influence", "Scuttle", "WYRM Jets", "Snow Globe", "Aegis", "Exterminate", "Spirit's Domain", "Deep Roots", "Mana Rift", "Treacherous Ground", "Sacrifice", "The Power Cosmeum", "Lian's Shield", "Steady Aim", "Blood Reaper", "Death Hastens", "Precision", "Cursed Accord", "Street Justice", "Half Shell", "Wekono's Wrath", "Boom Boom", "Asymmetric Warfare", "Catalyst", "Enforcer", "Extension", "Aerial Assault", "Window of Opportunity", "Mortal Reach", "Sand Trap", "Smoke And Dagger", "Crack Shot", "Inner Strength", "Crush", "Tigron's Fury", "Field Study", "Mercy Kill", "Unerring", "Tribunal Upgrades", "Shrapnel", "Opportunity in Chaos", "Relentless Presence", "Scorn", "Corrosive Acid", "Life Exchange", "Yomi"];
+var talent1 = ["Cursed Revolver", "Battering Ram", "Unstable Fissure", "Persistence", "Forgefire", "Fiery Disposition", "Chain Reaction", "Ensnare", "Impulse", "Measured Cadence", "Spreading Influence", "Scuttle", "WYRM Jets", "Snow Globe", "Aegis", "Exterminate", "Spirit's Domain", "Deep Roots", "Mana Rift", "Treacherous Ground", "Sacrifice", "The Power Cosmeum", "Empowered Curse", "Lian's Shield", "Steady Aim", "Blood Reaper", "Death Hastens", "Precision", "Cursed Accord", "Street Justice", "Half Shell", "Wekono's Wrath", "Boom Boom", "Asymmetric Warfare", "Catalyst", "Enforcer", "Extension", "Aerial Assault", "Window of Opportunity", "Mortal Reach", "Sand Trap", "Smoke And Dagger", "Crack Shot", "Inner Strength", "Crush", "Tigron's Fury", "Field Study", "Mercy Kill", "Unerring", "Tribunal Upgrades", "Shrapnel", "Opportunity in Chaos", "Relentless Presence", "Scorn", "Corrosive Acid", "Life Exchange", "Yomi"];
 
-var talent2 = ["Godslayer", "Slug Shot", "Temporal Divide", "Tempering", "Tinkerin", "Controlled Fury", "Royal Subjects", "Bulk Up", "Exaction", "Dark Gifts", "Abyss Spike", "Fusillade", "Wormhole", "Formidible", "Cherish", "Maelstrom", "Rampant Blooming", "Pyromania", "Mother's Grace", "Goddess' Blessing", "Luminary", "Vortex Grip", "Reposition", "Adrenaline Junkie", "Discovery", "Eminence", "Maelstrom of Carnage", "Cat Burglar", "Leviathan", "Spirit's Chosen", "Toot", "Hell or High Water", "Mega Potion", "Earthsplitter", "Restraint", "Rocket Barrage", "Improvised", "Soul Collector", "Recurve", "Debilitate", "Unauthorized Use", "Faustian Bargain", "Decimation", "Predatory Instincts", "Direct Current", "Burn Monster", "Omnipresence", "Overcharged", "Cardio", "Suspect Everyone", "Deafening Silence", "Blastflower", "Sight Begets Strength", "Resonance", "Guillotine"];
+var talent2 = ["Godslayer", "Slug Shot", "Temporal Divide", "Tempering", "Tinkerin", "Controlled Fury", "Royal Subjects", "Bulk Up", "Exaction", "Everywhere at Once", "Dark Gifts", "Abyss Spike", "Fusillade", "Wormhole", "Formidible", "Cherish", "Maelstrom", "Rampant Blooming", "Pyromania", "Mother's Grace", "Goddess' Blessing", "Luminary", "Spirit Bombs", "Vortex Grip", "Reposition", "Adrenaline Junkie", "Discovery", "Eminence", "Maelstrom of Carnage", "Cat Burglar", "Leviathan", "Spirit's Chosen", "Toot", "Hell or High Water", "Mega Potion", "Earthsplitter", "Restraint", "Rocket Barrage", "Improvised", "Soul Collector", "Recurve", "Debilitate", "Unauthorized Use", "Faustian Bargain", "Decimation", "Predatory Instincts", "Direct Current", "Burn Monster", "Omnipresence", "Overcharged", "Cardio", "Suspect Everyone", "Deafening Silence", "Blastflower", "Sight Begets Strength", "Resonance", "Guillotine"];
 
-var talent3 = ["Defiant Fist", "Fortress Breaker", "Deja Vu", "Eternal", "Fortify", "Gotta Bounce", "Accelerant", "Bounce House", "Big Game", "Stunning Visage", "Hurl", "Combustible", "Over the Moon", "Scorch", "Solar Blessing", "Totemic Ward", "Ferocity", "Splitting Ice", "Tremors", "Life Link", "Binary Star", "Storm of Bullets", "Eagle Eye", "Dragon Fangs", "Heroism", "Alacrity", "Murderous Intent", "Rogue's Gambit", "Pluck", "Ripened Gourd", "Snack Attack", "Display of Force", "Combat Medic", "Subservience", "Focus", "Flux Generator", "Heads or Tails", "Agony", "Desert Silence", "Preparation", "Nocturnal", "Nothing Personal", "Undying", "Vicious Assault", "Thanks, Grandpa", "Hunting Party", "Enveloping Shadows", "Spring Loaded", "Burst Mode", "Booby Trap", "Unyielding Pressure", "Nightshade", "Unnatural Persistence", "Focusing Lens", "Smolder"];
+var talent3 = ["Defiant Fist", "Fortress Breaker", "Deja Vu", "Eternal", "Fortify", "Gotta Bounce", "Accelerant", "Bounce House", "Big Game", "It's Got Some Heft", "Stunning Visage", "Hurl", "Combustible", "Over the Moon", "Scorch", "Solar Blessing", "Totemic Ward", "Ferocity", "Splitting Ice", "Tremors", "Life Link", "Binary Star", "Unfinished Business", "Storm of Bullets", "Eagle Eye", "Dragon Fangs", "Heroism", "Alacrity", "Murderous Intent", "Rogue's Gambit", "Pluck", "Ripened Gourd", "Snack Attack", "Display of Force", "Combat Medic", "Subservience", "Focus", "Flux Generator", "Heads or Tails", "Agony", "Desert Silence", "Preparation", "Nocturnal", "Nothing Personal", "Undying", "Vicious Assault", "Thanks, Grandpa", "Hunting Party", "Enveloping Shadows", "Spring Loaded", "Burst Mode", "Booby Trap", "Unyielding Pressure", "Nightshade", "Unnatural Persistence", "Focusing Lens", "Smolder"];
 
-var items = ["Illuminate", "Resilience", "Guardian", "Haven", "Nimble", "Master Riding", "Morale Boost", "Chronos", "Rejuvenate", "Kill to Heal", "Life Rip", "Veteran", "Bulldozer", "Provision", "Deft Hands", "Wrecker"];
+var items = ["Illuminate", "Resilience", "Guardian", "Haven", "Nimble", "Master Riding", "Morale Boost", "Chronos", "Rejuvenate", "Kill to Heal", "Life Rip", "Veteran", "Bulldozer", "Lethality", "Deft Hands", "Wrecker"];
 var champ;
 var talent;
 
@@ -296,7 +296,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Azaan":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -316,6 +316,11 @@ function randomizeItem() {
 				}
 				break;
 			case "Cassie":
+				while (items[rand] == "Guardian") {
+					rand = Math.floor(Math.random()*items.length);
+				}
+				break;
+			case "Caspian":
 				while (items[rand] == "Guardian") {
 					rand = Math.floor(Math.random()*items.length);
 				}
@@ -351,12 +356,12 @@ function randomizeItem() {
 				}
 				break;
 			case "Grover":
-				while (items[rand] == "Guardian" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
 			case "Imani":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -372,6 +377,11 @@ function randomizeItem() {
 				break;
 			case "Jenos":
 				while (items[rand] == "Guardian") {
+					rand = Math.floor(Math.random()*items.length);
+				}
+				break;
+			case "Kasumi":
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -396,7 +406,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Maeve":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -406,7 +416,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Moji":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -441,7 +451,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Sha Lin":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -461,7 +471,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Terminus":
-				while (items[rand] == "Guardian" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -491,7 +501,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Vora":
-				while (items[rand] == "Guardian" || item[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Guardian" || item[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -501,7 +511,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Yagorath":
-				while (items[rand] == "Master Riding" || items[rand] == "Nimble" || items[rand] == "Deft Hands" || items[rand] == "Provision") {
+				while (items[rand] == "Master Riding" || items[rand] == "Nimble" || items[rand] == "Deft Hands" || items[rand] == "Lethality") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
