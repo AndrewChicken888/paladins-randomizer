@@ -23,3 +23,9 @@ VII and Betty la Bomba have been added. Items have been updated to include Provi
 
 1.0.2 - 6/21/2022:
 Lillith has been added.
+
+1.0.3 - 10/12/2022:
+Caspian and Kasumi have been added. Removed the Provision item. Added the Lethality item. Fixed a bug where Grover could buy Deft Hands.
+
+1.1.0 - 1/17/2024:
+Updated to Season 7! Nyx and Omen have been added, and major UI improvements have been made. Added more clear error messaging for when no categories are selected. Added sound effects and additional glamour to improve user feedback reception. Updated the item listings for the Season 7 items. Fixed some bugs with improper item restrictions for some champions. Fixed faulty code for Vora that rendered her unable to roll items & cards.

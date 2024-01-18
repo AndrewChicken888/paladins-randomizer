@@ -6,15 +6,15 @@ function isMobileDevice() {
 };
 
 //Arrays containing the data for each section
-var champions = ["Androxus", "Ash", "Atlas", "Azaan", "Barik", "Betty la Bomba", "Bomb King", "Buck", "Cassie", "Caspian", "Corvus", "Dredge", "Drogoz", "Evie", "Fernando", "Furia", "Grohk", "Grover", "Imani", "Inara", "Io", "Jenos", "Kasumi", "Khan", "Kinessa", "Koga", "Lex", "Lian", "Lillith", "Maeve", "Makoa", "Mal'Damba", "Moji", "Octavia", "Pip", "Raum", "Rei", "Ruckus", "Saati", "Seris", "Sha Lin", "Skye", "Strix", "Talus", "Terminus", "Tiberius", "Torvald", "Tyra", "Vatu", "VII", "Viktor", "Vivian", "Vora", "Willo", "Yagorath", "Ying", "Zhin"];
+var champions = ["Androxus", "Ash", "Atlas", "Azaan", "Barik", "Betty la Bomba", "Bomb King", "Buck", "Cassie", "Caspian", "Corvus", "Dredge", "Drogoz", "Evie", "Fernando", "Furia", "Grohk", "Grover", "Imani", "Inara", "Io", "Jenos", "Kasumi", "Khan", "Kinessa", "Koga", "Lex", "Lian", "Lillith", "Maeve", "Makoa", "Mal'Damba", "Moji", "Nyx", "Octavia", "Omen", "Pip", "Raum", "Rei", "Ruckus", "Saati", "Seris", "Sha Lin", "Skye", "Strix", "Talus", "Terminus", "Tiberius", "Torvald", "Tyra", "Vatu", "VII", "Viktor", "Vivian", "Vora", "Willo", "Yagorath", "Ying", "Zhin"];
 
-var talent1 = ["Cursed Revolver", "Battering Ram", "Unstable Fissure", "Persistence", "Forgefire", "Fiery Disposition", "Chain Reaction", "Ensnare", "Impulse", "Measured Cadence", "Spreading Influence", "Scuttle", "WYRM Jets", "Snow Globe", "Aegis", "Exterminate", "Spirit's Domain", "Deep Roots", "Mana Rift", "Treacherous Ground", "Sacrifice", "The Power Cosmeum", "Empowered Curse", "Lian's Shield", "Steady Aim", "Blood Reaper", "Death Hastens", "Precision", "Cursed Accord", "Street Justice", "Half Shell", "Wekono's Wrath", "Boom Boom", "Asymmetric Warfare", "Catalyst", "Enforcer", "Extension", "Aerial Assault", "Window of Opportunity", "Mortal Reach", "Sand Trap", "Smoke And Dagger", "Crack Shot", "Inner Strength", "Crush", "Tigron's Fury", "Field Study", "Mercy Kill", "Unerring", "Tribunal Upgrades", "Shrapnel", "Opportunity in Chaos", "Relentless Presence", "Scorn", "Corrosive Acid", "Life Exchange", "Yomi"];
+var talent1 = ["Cursed Revolver", "Battering Ram", "Unstable Fissure", "Persistence", "Forgefire", "Fiery Disposition", "Chain Reaction", "Ensnare", "Impulse", "Measured Cadence", "Spreading Influence", "Scuttle", "WYRM Jets", "Snow Globe", "Aegis", "Exterminate", "Spirit's Domain", "Deep Roots", "Mana Rift", "Treacherous Ground", "Sacrifice", "The Power Cosmeum", "Empowered Curse", "Lian's Shield", "Steady Aim", "Blood Reaper", "Death Hastens", "Precision", "Cursed Accord", "Street Justice", "Half Shell", "Wekono's Wrath", "Boom Boom", "Show of Force", "Asymmetric Warfare", "Everyone Dies", "Catalyst", "Enforcer", "Extension", "Aerial Assault", "Window of Opportunity", "Mortal Reach", "Sand Trap", "Smoke And Dagger", "Crack Shot", "Inner Strength", "Crush", "Tigron's Fury", "Field Study", "Mercy Kill", "Unerring", "Tribunal Upgrades", "Shrapnel", "Opportunity in Chaos", "Relentless Presence", "Scorn", "Corrosive Acid", "Life Exchange", "Yomi"];
 
-var talent2 = ["Godslayer", "Slug Shot", "Temporal Divide", "Tempering", "Tinkerin", "Controlled Fury", "Royal Subjects", "Bulk Up", "Exaction", "Everywhere at Once", "Dark Gifts", "Abyss Spike", "Fusillade", "Wormhole", "Formidible", "Cherish", "Maelstrom", "Rampant Blooming", "Pyromania", "Mother's Grace", "Goddess' Blessing", "Luminary", "Spirit Bombs", "Vortex Grip", "Reposition", "Adrenaline Junkie", "Discovery", "Eminence", "Maelstrom of Carnage", "Cat Burglar", "Leviathan", "Spirit's Chosen", "Toot", "Hell or High Water", "Mega Potion", "Earthsplitter", "Restraint", "Rocket Barrage", "Improvised", "Soul Collector", "Recurve", "Debilitate", "Unauthorized Use", "Faustian Bargain", "Decimation", "Predatory Instincts", "Direct Current", "Burn Monster", "Omnipresence", "Overcharged", "Cardio", "Suspect Everyone", "Deafening Silence", "Blastflower", "Sight Begets Strength", "Resonance", "Guillotine"];
+var talent2 = ["Godslayer", "Slug Shot", "Temporal Divide", "Tempering", "Tinkerin", "Controlled Fury", "Royal Subjects", "Bulk Up", "Exaction", "Everywhere at Once", "Dark Gifts", "Abyss Spike", "Fusillade", "Wormhole", "Formidible", "Cherish", "Maelstrom", "Rampant Blooming", "Pyromania", "Mother's Grace", "Goddess' Blessing", "Luminary", "Spirit Bombs", "Vortex Grip", "Reposition", "Adrenaline Junkie", "Discovery", "Eminence", "Maelstrom of Carnage", "Cat Burglar", "Leviathan", "Spirit's Chosen", "Toot", "Abyssal Breach", "Hell or High Water", "Umbral Lance", "Mega Potion", "Earthsplitter", "Restraint", "Rocket Barrage", "Improvised", "Soul Collector", "Recurve", "Debilitate", "Unauthorized Use", "Faustian Bargain", "Decimation", "Predatory Instincts", "Direct Current", "Burn Monster", "Omnipresence", "Overcharged", "Cardio", "Suspect Everyone", "Deafening Silence", "Blastflower", "Sight Begets Strength", "Resonance", "Guillotine"];
 
-var talent3 = ["Defiant Fist", "Fortress Breaker", "Deja Vu", "Eternal", "Fortify", "Gotta Bounce", "Accelerant", "Bounce House", "Big Game", "It's Got Some Heft", "Stunning Visage", "Hurl", "Combustible", "Over the Moon", "Scorch", "Solar Blessing", "Totemic Ward", "Ferocity", "Splitting Ice", "Tremors", "Life Link", "Binary Star", "Unfinished Business", "Storm of Bullets", "Eagle Eye", "Dragon Fangs", "Heroism", "Alacrity", "Murderous Intent", "Rogue's Gambit", "Pluck", "Ripened Gourd", "Snack Attack", "Display of Force", "Combat Medic", "Subservience", "Focus", "Flux Generator", "Heads or Tails", "Agony", "Desert Silence", "Preparation", "Nocturnal", "Nothing Personal", "Undying", "Vicious Assault", "Thanks, Grandpa", "Hunting Party", "Enveloping Shadows", "Spring Loaded", "Burst Mode", "Booby Trap", "Unyielding Pressure", "Nightshade", "Unnatural Persistence", "Focusing Lens", "Smolder"];
+var talent3 = ["Defiant Fist", "Fortress Breaker", "Deja Vu", "Eternal", "Fortify", "Gotta Bounce", "Accelerant", "Bounce House", "Big Game", "It's Got Some Heft", "Stunning Visage", "Hurl", "Combustible", "Over the Moon", "Scorch", "Solar Blessing", "Totemic Ward", "Ferocity", "Splitting Ice", "Tremors", "Life Link", "Binary Star", "Unfinished Business", "Storm of Bullets", "Eagle Eye", "Dragon Fangs", "Heroism", "Alacrity", "Murderous Intent", "Rogue's Gambit", "Pluck", "Ripened Gourd", "Snack Attack", "Subjugation", "Display of Force", "Binary Void", "Combat Medic", "Subservience", "Focus", "Flux Generator", "Heads or Tails", "Agony", "Desert Silence", "Preparation", "Nocturnal", "Nothing Personal", "Undying", "Vicious Assault", "Thanks, Grandpa", "Hunting Party", "Enveloping Shadows", "Spring Loaded", "Burst Mode", "Booby Trap", "Unyielding Pressure", "Nightshade", "Unnatural Persistence", "Focusing Lens", "Smolder"];
 
-var items = ["Illuminate", "Resilience", "Guardian", "Haven", "Nimble", "Master Riding", "Morale Boost", "Chronos", "Rejuvenate", "Kill to Heal", "Life Rip", "Veteran", "Bulldozer", "Lethality", "Deft Hands", "Wrecker"];
+var items = ["Unbound", "Sentinel", "Arcane Warding", "Guardian", "Armor Plating", "Nimble", "Hoard", "Master Riding", "Morale Boost", "Chronos", "Meditation", "Life Rip", "Rejuvenate", "Veteran", "Bloodbath", "Bulldozer", "Trigger Scent", "Deft Hands", "Lethality", "Wrecker"];
 var champ;
 var talent;
 
@@ -31,8 +31,16 @@ var cardY = [0, 0, 0, 0, 0];
 //This array holds all possible value combinations for cards.
 const possibleValues = [[5,5,3,1,1],[5,3,3,3,1],[5,3,3,2,2],[5,4,3,2,1],[5,4,4,1,1],[4,4,4,2,1],[4,4,3,3,1],[4,4,3,2,2],[4,3,3,3,2],[3,3,3,3,3]];
 
-/*
+//Media Variables
+var soundGood = new Audio("Score.wav");
+var soundBad = new Audio("Error.wav");
 
+//Animation Variables
+var borderClock = -1;
+var toggleCredits = false;
+var randomizedOnce = false;
+
+/*
 
 
 Note for the future!
@@ -46,6 +54,19 @@ _ 3 _ _     _ 5 _ _
 
 
 */
+
+//Animation clock
+setInterval(animTimer, 100);
+
+function animTimer() {	
+	//Reset the border
+	if (borderClock > 0) {
+		borderClock--;
+	} else if (borderClock === 0) {
+		borderClock = -1;
+		document.getElementById("main_container").style.border = "5px solid white";
+	}
+}
 
 //Run this on startup
 function init() {
@@ -64,6 +85,9 @@ function init() {
 
 	toggleCards(false);
 	resizeCards();
+	//Set the audio volume
+	soundGood.volume = 0.5;
+	soundBad.volume = 0.3;
 };
 
 window.addEventListener('resize', resizeCards);
@@ -74,8 +98,11 @@ function randomize() {
 	//alert("Randomizing!");
 	
 	//Check if a randomizer is turned on. Return if not:
-	if (!document.getElementById("champToggle").checked && !document.getElementById("itemToggle").checked && !document.getElementById("cardsToggle").checked) {
-		alert("You don't have anything selected!");
+	if (!document.getElementById("champToggle").checked && !document.getElementById("itemToggle").checked && !document.getElementById("cardsToggle").checked && !document.getElementById("talentToggle").checked) {
+		document.getElementById("error").innerHTML = "Error: You don't have anything selected!";
+		soundBad.currentTime = 0;
+		soundBad.play();
+		document.getElementById("main_container").style.border = "5px solid red";
 		return;
 	}
 	
@@ -249,6 +276,15 @@ function randomize() {
 		//alert(cardValues);
 		toggleCards(true);
 	}
+	soundGood.currentTime = 0;
+	soundGood.play();
+	borderClock = 1;
+	document.getElementById("main_container").style.border = "5px solid yellow";
+	document.getElementById("error").innerHTML = "";
+	//Turn randomizedOnce on for the sake of the credits.
+	if (!randomizedOnce) {
+		randomizedOnce = true;
+	}
 };
 
 
@@ -405,6 +441,11 @@ function randomizeItem() {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
+			case "Lillith":
+				while (items[rand] == "Guardian") {
+					rand = Math.floor(Math.random()*items.length);
+				}
+				break;
 			case "Maeve":
 				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
@@ -420,7 +461,12 @@ function randomizeItem() {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
-			case "Octavia":
+			case "Nyx" :
+				while (items[rand] == "Deft Hands") {
+					rand = Math.floor(Math.random()*items.length);
+				}
+				break;
+			case "Omen":
 				while (items[rand] == "Guardian") {
 					rand = Math.floor(Math.random()*items.length);
 				}
@@ -501,7 +547,7 @@ function randomizeItem() {
 				}
 				break;
 			case "Vora":
-				while (items[rand] == "Guardian" || item[rand] == "Deft Hands") {
+				while (items[rand] == "Guardian" || items[rand] == "Deft Hands") {
 					rand = Math.floor(Math.random()*items.length);
 				}
 				break;
@@ -529,3 +575,21 @@ function randomizeItem() {
 				rand = Math.floor(Math.random()*items.length);
 		}
 	}
+	
+//Toggle credits
+function credits() {
+	//If credits are on, turn them off and revert to the main menu. Restore the event listeners for the input fields. Otherwise, show credits.
+	if (toggleCredits) {
+		toggleCredits = false;
+		document.getElementById("main").innerHTML = '<h2>Welcome to the Paladins Randomizer!</h2><p>This program will randomize everything about Paladins. Choose to randomize your champion, items, loadouts, or even your whole team!</p><p>Also try the <a id="champBox" href="https://andrewchicken888.github.io/champion-box/" target="_blank" rel="noopener noreferrer">Champion Box!</a></p><p id="error"></p><div id="main_container"><div id="champ_container"><label class="checkcontainer"><input class="toggle" id="champToggle" type="checkbox" name="champToggle" value="champToggle" checked><span class="checkmark"></span></label><img id="champ_image" src="DefaultChamp.png"/></div><div id="item_container"><label class="checkcontainer"><input class="toggle" id="itemToggle" type="checkbox" name="itemToggle" value="itemToggle" checked><span class="checkmark"></span></label><img class="item" id="item1img" src="DefaultItem.png"/><img class="item" id="item2img" src="DefaultItem.png"/><img class="item" id="item3img" src="DefaultItem.png"/><img class="item" id="item4img" src="DefaultItem.png"/></div><br><div id="column"><div id="talent_container"><label class="checkcontainer"><input class="toggle" id="talentToggle" type="checkbox" name="talentToggle" value="talentToggle" checked><span class="checkmark"></span></label><p id="talent">Talent</p></div><button id="randomize" onclick="randomize()" type="button">Randomize!</button></div><div id="loadout_container"><label class="checkcontainer"><input class="toggle" id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle" checked><span class="checkmark"></span></label><img id="cards_img" src="CardDeck.png"/><img class="card" id="card_0" src="CardSelect.png"/><img class="card" id="card_1" src="CardSelect.png"/><img class="card" id="card_2" src="CardSelect.png"/><img class="card" id="card_3" src="CardSelect.png"/><img class="card" id="card_4" src="CardSelect.png"/></div></div><br>';
+		resizeCards();
+		if (randomizedOnce) {
+			
+		} else {
+			toggleCards(false);
+		}
+	} else {
+		toggleCredits = true;
+		document.getElementById("main").innerHTML = '<p>Version 1.1.0 designed by AndrewChicken</p><p>Sound effects from \'Sonic Mania\' by Sega</p><p>Champions and champion images from \'Paladins, Champions of the Realm\' by Evil Mojo Studios</p><button type="button" id="goBack" onclick="credits()">Back</button>';
+	}
+}

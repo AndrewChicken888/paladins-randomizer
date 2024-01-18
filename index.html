@@ -7,18 +7,21 @@
 	<link rel="shortcut icon" href="icon.PNG"/>
 </head>
 <body onload="init()">
-	<div id="header"><h1 id="headerText">Paladins Randomizer 1.0.3</h1></div>
+	<div id="header"><h1 id="headerText">Paladins Randomizer</h1></div>
 	<div id="main">
 		<h2>Welcome to the Paladins Randomizer!</h2>
-		<p>This program will randomize everything about Paladins. Choose to randomize your champion, items, loadouts, or even your whole team!</p>
-		<br>
+		<p>This program will randomize everything about Paladins. Choose to randomize your champion, items, loadouts, or even your whole team! Updated for Season 7!</p>
+		<p>Also try the <a id="champBox" href="https://andrewchicken888.github.io/champion-box/" target="_blank" rel="noopener noreferrer">Champion Box!</a></p>
+		<p id="error"></p>
 		<div id="main_container">
 			<div id="champ_container">
-				<input class="toggle" id="champToggle" type="checkbox" name="champToggle" value="champToggle" checked>
+				<label class="checkcontainer"><input class="toggle" id="champToggle" type="checkbox" name="champToggle" value="champToggle" checked>
+				<span class="checkmark"></span></label>
 				<img id="champ_image" src="DefaultChamp.png"/>
 			</div>
 			<div id="item_container">
-				<input class="toggle" id="itemToggle" type="checkbox" name="itemToggle" value="itemToggle" checked>
+				<label class="checkcontainer"><input class="toggle" id="itemToggle" type="checkbox" name="itemToggle" value="itemToggle" checked>
+				<span class="checkmark"></span></label>
 				<img class="item" id="item1img" src="DefaultItem.png"/>
 				<img class="item" id="item2img" src="DefaultItem.png"/>
 				<img class="item" id="item3img" src="DefaultItem.png"/>
@@ -27,13 +30,15 @@
 			<br>
 			<div id="column">
 				<div id="talent_container">
-				<input class="toggle" id="talentToggle" type="checkbox" name="talentToggle" value="talentToggle" checked>
+				<label class="checkcontainer"><input class="toggle" id="talentToggle" type="checkbox" name="talentToggle" value="talentToggle" checked>
+				<span class="checkmark"></span></label>
 				<p id="talent">Talent</p>
 				</div>
 				<button id="randomize" onclick="randomize()" type="button">Randomize!</button>				
 			</div>
 			<div id="loadout_container">
-				<input class="toggle" id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle" checked>
+				<label class="checkcontainer"><input class="toggle" id="cardsToggle" type="checkbox" name="cardsToggle" value="cardsToggle" checked>
+				<span class="checkmark"></span></label>
 				<img id="cards_img" src="CardDeck.png"/>
 				<img class="card" id="card_0" src="CardSelect.png"/>
 				<img class="card" id="card_1" src="CardSelect.png"/>
@@ -42,10 +47,13 @@
 				<img class="card" id="card_4" src="CardSelect.png"/>
 			</div>
 		</div>
+		<br>
 	</div>
 	<div id="footer">
 		<a href="https://www.youtube.com/AndrewChicken" target="_blank" rel="noopener noreferrer">YouTube</a>
 		<a href="https://www.twitch.tv/andrewchicken" target="_blank" rel="noopener noreferrer">Twitch</a>
 		<a href="https://discord.com/invite/fnjV3nV" target="_blank" rel="noopener noreferrer">Discord</a>
+		<a onclick="credits()">Credits</a>
+		<a href="https://www.nexus.gg/andrewchicken" target="_blank" rel="noopener noreferrer">Support Me!</a>
 	</div>
 </body>

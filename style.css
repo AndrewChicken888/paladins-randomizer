@@ -8,10 +8,18 @@
 */
 
 /* Tags */
+html {
+	height: 100%;
+}
 
 body {
 	background-color:#121212;
 	color:white;
+	font-family:'Arial';
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
 }
 
 a {
@@ -25,6 +33,10 @@ a {
 
 a:hover {
 	color: #309bd9;
+}
+
+p {
+	font-size: 20px;
 }
 
 button {
@@ -41,9 +53,7 @@ button {
     color:#FFF;
     white-space: nowrap;
     overflow:hidden;
-
-    width:108px;
-    height:35px;
+	
 	font-style:bold;
 	font-size:24px;
 }
@@ -71,48 +81,101 @@ label {
 	position: absolute;
 }
 
-.toggle {
+.checkcontainer {
 	position: absolute;
-	z-index: 1;
+	width:1vw;
+	height:1vw;
+	cursor:pointer;
+}
+
+.checkcontainer input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top:0;
+	left:0;
+	width:1vw;
+	height:1vw;
+	border: .15vw solid white;
+	background-color: #15282A;
+}
+
+.checkcontainer:hover input ~ .checkmark {
+	border-color: #309bd9;
+}
+
+.checkcontainer input:checked ~ .checkmark {
+	background-color: #18445e;
+}
+
+.checkcontainer:hover input:checked ~ .checkmark {
+	background-color: #18445e;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkcontainer input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.checkcontainer:hover .checkmark:after {
+	border-color: #309bd9;
+}
+
+.checkcontainer .checkmark:after {
+	position: absolute;
+	left: .33vw;
+	top: .1vw;
+	width: .2vw;
+	height: .4vw;
+	border: solid white;
+	border-width: 0 .15vw .15vw 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 /* IDs */
 
 #header {
 	z-index: 999;
-	position: absolute;
-	height: 70px;
-	top: 0;
 	background-color: #18445e;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 20px;
 	border-bottom: 5px solid white;
 	text-align: center;
-	width: 100%;
 	left: 0;
 }
 
 #main {
-	position: absolute;
+	flex: 1 0 auto;
 	text-align: center;
-	top: 100px;
+	padding: 20px;
 }
 
 #footer {
+	flex-shrink: 0;
+	bottom:0;
 	z-index: 1000;
-	position: fixed;
-	bottom: 0px;
 	background-color: #18445e;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 20px;
 	border-top: 5px solid white;
 	text-align: center;
-	width: 100%;
 	left: 0%;
 }
 
 #main_container {
 	display: flex;
+	flex-shrink: 0;
 	flex-wrap: wrap;
 	border: 5px solid white;
 	width: 65%;
@@ -127,6 +190,40 @@ label {
 #randomize {
 	width: 100%;
 	height: 50%;
+	text-align: center;
+	font-style:bold;
+	font-size:1.5vw;
+	border: 5px solid #0D2533;
+}
+
+#randomize:hover {
+	border: 5px solid #309bd9;
+}
+
+#goBack {
+	padding-left:10px;
+    padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+
+    -webkit-appearance:button;
+	
+	border: 2px solid #0D2533;
+
+    background-color:#18445e;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+
+	font-style:bold;
+	font-size:24px;
+}
+
+#goBack:hover {
+	background-color:#18445e;
+	--fontcolor: #309bd9;
+	color: var(--fontcolor);
+	cursor:pointer;
 }
 
 #talent_container {
@@ -135,7 +232,7 @@ label {
 	text-align: center;
 	display: flex;	
 	font-style:bold;
-	font-size:24px;
+	font-size:1.5vw;
 }
 
 #talent {
@@ -148,7 +245,7 @@ label {
 #champ_container {
 	display: flex;
 	flex: 20%;
-	max-width: 16.1%;
+	max-width: 16.05%;
 	max-height: 15%;
 	width: 100%;
 	height: 100%;
@@ -178,4 +275,22 @@ label {
 #cards_img {
 	z-index: -1;
 	width: 100%;
+}
+
+#error {
+	color:#FF0000;
+	font-size:1.5vw;
+}
+
+#champBox {
+	color: yellow;
+	font-size: 20px;
+	padding-left: 0px;
+	padding-right: 0;
+	/*font-family: 'Aachen';*/
+	text-decoration: underline;
+}
+
+#champBox:hover {
+	color: #309bd9;
 }
